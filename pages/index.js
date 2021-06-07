@@ -22,7 +22,7 @@ export default function Home({ data }) {
       <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-0">
         <div className="mt-20">
           <h2 className="text-4xl text-gray-900 dark:text-gray-100 font-semibold mb-4">Recent Posts</h2>
-          {data?.posts?.map((post) => (
+          {data?.posts.map((post) => (
             <div
               key={post.slug}
               className="grid grid-cols-1 md:grid-cols-4 py-6 border-b border-gray-200 dark:border-gray-800"
