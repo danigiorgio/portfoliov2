@@ -1,0 +1,60 @@
+{
+  "name": "portfolio",
+  "description": "Web Portfolio",
+  "version": "0.1.0",
+  "author": "Daniela Giorgio",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/voirs/portfoliov2"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "format": "prettier --write \"**/*.{js}\"",
+    "start": "next start",
+    "lint": "yarn eslint . --ext .js",
+    "lint:fix": "yarn eslint . --ext .js, --fix"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.4.0",
+    "graphql": "^15.5.0",
+    "graphql-request": "^3.4.0",
+    "he": "^1.2.0",
+    "next": "10.2.0",
+    "next-mdx-remote": "^2.1.4",
+    "next-seo": "^4.24.0",
+    "next-themes": "^0.0.14",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "eslint": "^7.25.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "globby": "^11.0.3",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "postcss": "^8.2.13",
+    "prettier": "^2.2.1",
+    "tailwindcss": "^2.1.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "lint-staged": {
+    "*.{css,js,jsx,ts,tsx}": [
+      "prettier --write"
+    ],
+    "*.js": [
+      "eslint --fix"
+    ]
+  }
+}
