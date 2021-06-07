@@ -64,6 +64,7 @@ https://danielagiorgio.com/
 ### Lighthouse Performance Audit
 <img alt="License: MIT" src="./.github/images/lighthouse.gif" target="_blank" />
 
+(If you run the audit, do it on incognito without any ad blocker extensions).
   
 # :construction_worker_woman: How to run
 **You need to install [Node.js](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/) first, then:**
