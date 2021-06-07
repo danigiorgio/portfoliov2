@@ -22,7 +22,7 @@
   <img alt="Github Repo Size" src="https://img.shields.io/github/repo-size/voirs/portfoliov2?color=6868DF" />
 </p>
 
-> Second iteration of my web portfolio. Made with Next.js, GraphCMS, TailwindCSS and Vercel.
+ <p align="center">Second iteration of my web portfolio. Made with Next.js, GraphCMS, TailwindCSS and Vercel.</p>
 
 <div align="center">
   <sub>Portfolio v2. Built by
@@ -36,7 +36,7 @@
 
 # :pushpin: Table of Contents
 
-* [Website](#eyes-website)
+* [Website](#sparkles-website)
 * [Technologies](#computer-technologies)
 * [Features](#rocket-features)
 * [How to run](#construction_worker_woman-how-to-run)
@@ -44,11 +44,10 @@
 * [Contributing](#handshake-contributing)
 * [License](#closed_book-license)
 
-# :eyes: Website
+# :sparkles: Demo
 https://danielagiorgio.com/
 
 # :computer: Technologies
-This project was made using these technologies:
 
 * [Next.js](https://nextjs.org/)     
 * [TailwindCSS](https://tailwindcss.com)      
@@ -94,7 +93,7 @@ Feel free to check [issues page](https://github.com/voirs/portfoliov2/issues) if
 
 
 # :handshake: Contributing
-First of all, thank you for being interested in helping out, your time is always appreciated in every way. :100:
+First of all, thank you for being interested in helping out, your time is always appreciated in every way. 
 
 Here's some tips:
 
