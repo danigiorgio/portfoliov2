@@ -2,7 +2,7 @@
    <img alt="Portfolio logo" src="./.github/images/logo.png"  width="250"/>
 </p>
  
-<h1 align="center">Portfolio v2</h1>
+<h1 align="center">danielagiorgio.com</h1>
 
 <p align="center">	
    <a href="https://linkedin.com/in/danielagiorgio">
@@ -51,7 +51,7 @@ https://danielagiorgio.com/
 This project was made using these technologies:
 
 * [Next.js](https://nextjs.org/)     
-* [Tailwind Css](https://tailwindcss.com)      
+* [TailwindCSS](https://tailwindcss.com)      
 * [GraphCMS](https://graphcms.com/)    
 * [Vercel](https://vercel.com/)     
 
@@ -93,9 +93,6 @@ Feel free to check [issues page](https://github.com/voirs/portfoliov2/issues) if
 ---
 
 
-[⬆ Back to Top](#pushpin-table-of-contents)
-
-
 # :handshake: Contributing
 First of all, thank you for being interested in helping out, your time is always appreciated in every way. :100:
 
@@ -109,3 +106,6 @@ Here's some tips:
 
 Copyright © 2021 [Daniela Giorgio](https://github.com/voirs).<br />
 This repo is [MIT](https://github.com/voirs/portfolio/blob/main/LICENSE) licensed.
+
+
+[⬆ Back to Top](#pushpin-table-of-contents)
