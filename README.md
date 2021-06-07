@@ -9,13 +9,13 @@
       <img alt="Daniela Giorgio" src="https://img.shields.io/badge/-voirs-6868DF?style=flat&logo=Linkedin&logoColor=white" />
    </a>
   <a href="https://github.com/voirs/portfoliov2#readme">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-6868DF.svg" target="_blank" />
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-6868DF.svg" />
   </a>
   <a href="https://github.com/voirs/portfoliov2/graphs/commit-activity">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-6868DF.svg" target="_blank" />
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-6868DF.svg" />
   </a>
   <a href="https://github.com/voirs/portfoliov2/blob/master/LICENSE">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-6868DF.svg" target="_blank" />
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-6868DF.svg" />
   </a>
   <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr/voirs/portfoliov2?color=6868DF" />
   <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/voirs/portfoliov2?color=6868DF" />
@@ -36,7 +36,7 @@
 
 # :pushpin: Table of Contents
 
-* [Website](#sparkles-website)
+* [Demo](#sparkles-demo)
 * [Technologies](#computer-technologies)
 * [Features](#rocket-features)
 * [How to run](#construction_worker_woman-how-to-run)
@@ -61,6 +61,9 @@ https://danielagiorgio.com/
 - Projects page
 - Dark & light theme
 
+### Lighthouse Performance Audit
+<img alt="License: MIT" src="./.github/images/lighthouse.gif" target="_blank" />
+
   
 # :construction_worker_woman: How to run
 **You need to install [Node.js](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/) first, then:**
@@ -73,7 +76,7 @@ git clone https://github.com/voirs/portfoliov2.git
 Rename `.env-example` to `.env` and add a `GRAPHQL_URL_ENDPOINT`
 ### Install Dependencies
 ```bash
-yarn install
+yarn
 ```
 ### Run Aplication
 ```bash 
@@ -88,8 +91,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 Contributions, issues and feature requests are welcome. I always appreciate feedback! <br />
 Feel free to check [issues page](https://github.com/voirs/portfoliov2/issues) if you want to contribute.<br />
-
----
 
 
 # :handshake: Contributing
