@@ -7,8 +7,8 @@ export default function Hero() {
         Hi!{" "}
         <img
           className="inline mb-0.5"
-          height="40"
-          width="40"
+          height="33"
+          width="33"
           src="/static/images/waving-hand.png"
           aria-label="Waving hand"
           alt="Waving hand"
