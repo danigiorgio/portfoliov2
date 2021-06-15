@@ -67,7 +67,20 @@ https://danielagiorgio.com/
 (If you run the audit, do it on incognito without any ad blocker extensions).
   
 # :construction_worker_woman: How to run
-**You need to install [Node.js](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/) first, then:**
+
+You need to install [Node.js](https://nodejs.org/en/download/). Then you may choose between:
+
+* npm 
+  ```sh
+  npm i npm@latest -g
+  ```
+  or...
+
+
+* yarn
+  ```sh
+  npm i -g yarn
+  ```
 
 ### Clone Repo
 ```bash
