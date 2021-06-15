@@ -57,12 +57,12 @@ https://danielagiorgio.com/
 # :rocket: Features
 
 - Blog page
-- Search posts
 - Projects page
+- Search posts
 - Dark & light theme
 
 ### Lighthouse Performance Audit
-<img alt="License: MIT" src="./.github/images/lighthouse.gif" target="_blank" />
+<img alt="Perfect Google Chrome Lighthouse score" src="./.github/images/lighthouse.gif" target="_blank" />
 
 (If you run the audit, do it on incognito without any ad blocker extensions).
   
