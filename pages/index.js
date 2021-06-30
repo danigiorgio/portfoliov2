@@ -1,8 +1,9 @@
+import Link from "next/link";
+
 import Card from "@/components/Card";
 import Container from "@/components/Container";
 import Hero from "@/components/Hero";
 import { getPostsAndProjects } from "@/data/queries";
-import Link from "next/link";
 
 export const getStaticProps = async () => {
   const data = await getPostsAndProjects();
