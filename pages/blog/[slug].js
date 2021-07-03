@@ -60,7 +60,7 @@ export default function BlosSlug({ post, content }) {
           </div>
         </div>
 
-        <div className="prose dark:prose-dark prose-xl max-w-none">{hydrate(content)}</div>
+        <div className="mb-10 prose dark:prose-dark prose-xl max-w-none">{hydrate(content)}</div>
       </div>
     </Container>
   );
