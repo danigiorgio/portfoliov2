@@ -64,7 +64,7 @@ https://danielagiorgio.com/
 ### Lighthouse Performance Audit
 <img alt="Perfect Google Chrome Lighthouse score" src="./.github/images/lighthouse.gif" target="_blank" />
 
-(If you run the audit, do it on incognito without any ad blocker extensions).
+(If you run the audit, do it on incognito without any ad-blocking extensions).
   
 # :construction_worker_woman: How to run
 
