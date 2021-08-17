@@ -22,7 +22,7 @@ export const icons = [
   },
   {
     name: "Github",
-    href: "https://github.com/voirs",
+    href: "https://github.com/danigiorgio",
     icon: (props) => (
       <svg
         width="24"
@@ -41,7 +41,7 @@ export const icons = [
   },
   {
     name: "Codepen",
-    href: "https://codepen.io/voirs",
+    href: "https://codepen.io/danigiorgio",
     icon: (props) => (
       <svg
         width="24"
