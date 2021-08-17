@@ -6,27 +6,27 @@
 
 <p align="center">	
    <a href="https://linkedin.com/in/danielagiorgio">
-      <img alt="Daniela Giorgio" src="https://img.shields.io/badge/-voirs-6868DF?style=flat&logo=Linkedin&logoColor=white" />
+      <img alt="Daniela Giorgio" src="https://img.shields.io/badge/-danigiorgio-6868DF?style=flat&logo=Linkedin&logoColor=white" />
    </a>
-  <a href="https://github.com/voirs/portfoliov2#readme">
+  <a href="https://github.com/danigiorgio/portfoliov2#readme">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-6868DF.svg" />
   </a>
-  <a href="https://github.com/voirs/portfoliov2/graphs/commit-activity">
+  <a href="https://github.com/danigiorgio/portfoliov2/graphs/commit-activity">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-6868DF.svg" />
   </a>
-  <a href="https://github.com/voirs/portfoliov2/blob/master/LICENSE">
+  <a href="https://github.com/danigiorgio/portfoliov2/blob/master/LICENSE">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-6868DF.svg" />
   </a>
-  <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr/voirs/portfoliov2?color=6868DF" />
-  <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/voirs/portfoliov2?color=6868DF" />
-  <img alt="Github Repo Size" src="https://img.shields.io/github/repo-size/voirs/portfoliov2?color=6868DF" />
+  <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr/danigiorgio/portfoliov2?color=6868DF" />
+  <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/danigiorgio/portfoliov2?color=6868DF" />
+  <img alt="Github Repo Size" src="https://img.shields.io/github/repo-size/danigiorgio/portfoliov2?color=6868DF" />
 </p>
 
  <p align="center">Second iteration of my web portfolio. Made with Next.js, GraphCMS, TailwindCSS and Vercel.</p>
 
 <div align="center">
   <sub>Portfolio v2. Built by
-    <a href="https://github.com/voirs">Daniela Giorgio</a>
+    <a href="https://github.com/danigiorgio">Daniela Giorgio</a>
   </sub>
 </div>
 
@@ -84,7 +84,7 @@ You need to install [Node.js](https://nodejs.org/en/download/). Then you may cho
 
 ### Clone Repo
 ```bash
-git clone https://github.com/voirs/portfoliov2.git
+git clone https://github.com/danigiorgio/portfoliov2.git
 ```
 ### Rename env file
 Rename `.env-example` to `.env` and add a `GRAPHQL_URL_ENDPOINT`
@@ -104,7 +104,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 
 Contributions, issues and feature requests are welcome. I always appreciate feedback! <br />
-Feel free to check [issues page](https://github.com/voirs/portfoliov2/issues) if you want to contribute.<br />
+Feel free to check [issues page](https://github.com/danigiorgio/portfoliov2/issues) if you want to contribute.<br />
 
 
 # :handshake: Contributing
@@ -112,14 +112,14 @@ First of all, thank you for being interested in helping out, your time is always
 
 Here's some tips:
 
-* Check the [issues page](https://github.com/voirs/portfoliov2/issues) for already opened issues (or maybe even closed ones) that might already address your question/bug/feature request.
+* Check the [issues page](https://github.com/danigiorgio/portfoliov2/issues) for already opened issues (or maybe even closed ones) that might already address your question/bug/feature request.
 * Feature requests are welcomed! Provide some details on why it would be helpful for you and others, explain how you're using bull-board and if possible even some screenshots if you are willing to mock something!
 
 
 # :closed_book: License
 
-Copyright © 2021 [Daniela Giorgio](https://github.com/voirs).<br />
-This repo is [MIT](https://github.com/voirs/portfolio/blob/main/LICENSE) licensed.
+Copyright © 2021 [Daniela Giorgio](https://github.com/danigiorgio).<br />
+This repo is [MIT](https://github.com/danigiorgio/portfoliov2/blob/main/LICENSE) licensed.
 
 
 [⬆ Back to Top](#pushpin-table-of-contents)
