@@ -1,7 +1,7 @@
 import he from "he";
 import Image from "next/image";
-import hydrate from "next-mdx-remote/hydrate";
-import renderToString from "next-mdx-remote/render-to-string";
+import { MDXRemote } from "next-mdx-remote";
+import { serialize } from "next-mdx-remote/serialize";
 
 import Container from "@/components/Container";
 import { getBlogSlugs, getPost } from "@/data/queries";
@@ -21,7 +21,7 @@ export const getStaticProps = async ({ params }) => {
   return {
     props: {
       post: post.posts[0],
-      content: await renderToString(he.decode(post.posts[0].content)),
+      content: await serialize(he.decode(post.posts[0].content)),
     },
   };
 };
@@ -60,7 +60,10 @@ export default function BlosSlug({ post, content }) {
           </div>
         </div>
 
-        <div className="mb-10 prose dark:prose-dark prose-xl max-w-none">{hydrate(content)}</div>
+        <div className="mb-10 prose dark:prose-dark prose-xl max-w-none">
+          {" "}
+          <MDXRemote {...content} />
+        </div>
       </div>
     </Container>
   );
