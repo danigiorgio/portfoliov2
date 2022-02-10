@@ -1,7 +1,7 @@
 import he from "he";
 import Image from "next/image";
-import hydrate from "next-mdx-remote/hydrate";
-import renderToString from "next-mdx-remote/render-to-string";
+import { MDXRemote } from "next-mdx-remote";
+import { serialize } from "next-mdx-remote/serialize";
 
 import Container from "@/components/Container";
 import { getProjectItem, getProjectSlugs } from "@/data/queries";
@@ -21,7 +21,7 @@ export const getStaticProps = async ({ params }) => {
   return {
     props: {
       projectItem: projectItem.projects[0],
-      content: await renderToString(he.decode(projectItem.projects[0].content)),
+      content: await serialize(he.decode(projectItem.projects[0].content)),
     },
   };
 };
@@ -83,7 +83,9 @@ export default function ProjectSlug({ projectItem, content }) {
           alt={projectItem.title}
         />
 
-        <div className="prose dark:prose-dark prose-xl max-w-none mt-4">{hydrate(content)}</div>
+        <div className="prose dark:prose-dark prose-xl max-w-none mt-4">
+          <MDXRemote {...content} />
+        </div>
       </div>
     </Container>
   );

@@ -1,6 +1,6 @@
 import he from "he";
-import hydrate from "next-mdx-remote/hydrate";
-import renderToString from "next-mdx-remote/render-to-string";
+import { MDXRemote } from "next-mdx-remote";
+import { serialize } from "next-mdx-remote/serialize";
 
 import Container from "@/components/Container";
 import { getAbout } from "@/data/queries";
@@ -10,7 +10,7 @@ export const getStaticProps = async () => {
   return {
     props: {
       data: data.abouts[0],
-      content: await renderToString(he.decode(data.abouts[0].content)),
+      content: await serialize(he.decode(data.abouts[0].content)),
     },
   };
 };
@@ -27,7 +27,7 @@ export default function AboutPage({ content }) {
             </span>
           </h1>
           <div className="text-lg leading-7 text-gray-500 dark:text-gray-400 space-y-2 md:space-y-5">
-            {hydrate(content)}
+            <MDXRemote {...content} />
           </div>
         </div>
       </div>

@@ -61,7 +61,6 @@ export default function BlosSlug({ post, content }) {
         </div>
 
         <div className="mb-10 prose dark:prose-dark prose-xl max-w-none">
-          {" "}
           <MDXRemote {...content} />
         </div>
       </div>
