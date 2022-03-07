@@ -58,25 +58,22 @@ export default function BlogPage({ posts }) {
           </svg>
         </div>
 
-        <div className="mt-5 lg:mt-10">
+        <div className="md:w-[40rem] w-[24rem] lg:w-[49rem] mt-5 lg:mt-10">
           {!filteredBlogPosts.length && "No posts found."}
           {filteredBlogPosts?.map((post) => (
-            <div
-              key={post.slug}
-              className="grid grid-cols-1 md:grid-cols-4 py-6 border-b border-gray-200 dark:border-gray-800"
-            >
+            <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0" key={post.slug}>
               <div className="mb-2 md:mb-0 md:col-span-1">
                 <p className="text-gray-600 dark:text-gray-300 text-sm">{new Date(post.date).toDateString()}</p>
               </div>
-              <article className="md:col-span-3">
+              <div className="md:col-span-3">
                 <Link href={`/blog/${post.slug}`}>
                   <a className="text-2xl font-bold text-gray-900 dark:text-gray-100 hover:text-gray-600 tracking-tight">
                     {post.title}
                   </a>
                 </Link>
                 <p className="text-gray-500 dark:text-gray-400 leading-relaxed sm:mt-3 mt-2">{post.description}</p>
-              </article>
-            </div>
+              </div>
+            </article>
           ))}
         </div>
       </section>
