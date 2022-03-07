@@ -39,7 +39,7 @@ export default function BlosSlug({ post, content }) {
         <div className="flex space-x-3 mt-2">
           {post.tags.map((tag) => (
             <span
-              className="uppercase text-sm tracking-wide m-2 bg-gray-100 dark:bg-gray-900 px-2 py-1 rounded-lg text-gray-900 dark:text-gray-200"
+              className="uppercase text-sm tracking-wide mt-2 bg-gray-100 text-gray-900  px-2 py-1 rounded-lg"
               key={tag}
             >
               {tag}
@@ -60,7 +60,7 @@ export default function BlosSlug({ post, content }) {
           </div>
         </div>
 
-        <div className="mb-10 prose dark:prose-dark prose-xl max-w-none">
+        <div className="pb-10 pt-10 prose dark:prose-dark prose-xl max-w-none">
           <MDXRemote {...content} />
         </div>
       </div>
