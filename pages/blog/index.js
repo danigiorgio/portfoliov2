@@ -20,6 +20,10 @@ export default function BlogPage({ posts }) {
     return searchContent.toLowerCase().includes(searchValue.toLowerCase());
   });
 
+  const handleSetSearchValue = (e) => {
+    setSearchValue(e.target.value);
+  };
+
   return (
     <Container
       title="Blog – Daniela Giorgio"
@@ -34,7 +38,7 @@ export default function BlogPage({ posts }) {
           <input
             aria-label="Search articles"
             type="text"
-            onChange={(e) => setSearchValue(e.target.value)}
+            onChange={handleSetSearchValue}
             placeholder="Search articles"
             className="block w-full px-4 py-2 text-gray-900 bg-white border border-gray-300 rounded-md dark:border-gray-600 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-gray-100"
           />
