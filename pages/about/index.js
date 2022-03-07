@@ -18,9 +18,9 @@ export const getStaticProps = async () => {
 export default function AboutPage({ content }) {
   return (
     <Container title="About – Daniela Giorgio" description="About me">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-0">
-        <div className="pt-6 pb-8 space-y-2 md:space-y-5">
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold tracking-tight text-gray-900 dark:text-gray-200">
+      <section className="max-w-3xl mx-auto mt-10 mb-12">
+        <div className="pb-8 space-y-2 md:space-y-5">
+          <h1 className="text-3xl md:text-6xl sm:text-4xl pb-3 font-extrabold tracking-tight text-gray-900 dark:text-gray-200">
             Hey{" "}
             <span role="img" aria-label="waving hand">
               👋
@@ -30,7 +30,7 @@ export default function AboutPage({ content }) {
             <MDXRemote {...content} />
           </div>
         </div>
-      </div>
+      </section>
     </Container>
   );
 }

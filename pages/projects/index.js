@@ -14,7 +14,7 @@ export const getStaticProps = async () => {
 export default function ProjectsPage({ projects }) {
   return (
     <Container title="Projects – Daniela Giorgio" description="Side projects and stuff I do on my free time.">
-      <section className="max-w-3xl mx-auto px-4 mt-10 mb-12">
+      <section className="max-w-3xl mx-auto mt-10 mb-12">
         <div className="pb-8 space-y-2 md:space-y-5">
           <h1 className="text-3xl md:text-6xl sm:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-gray-200">
             Projects

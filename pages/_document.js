@@ -14,7 +14,7 @@ class MyDocument extends Document {
           <meta name="msapplication-TileColor" content="#1d3557" />
           <meta name="theme-color" content="#ffffff" />
         </Head>
-        <body className="antialiased text-black bg-white dark:bg-grayish dark:text-white">
+        <body className="antialiased text-black bg-white dark:bg-grayish dark:text-white overflow-y-scroll">
           <Main />
           <NextScript />
         </body>

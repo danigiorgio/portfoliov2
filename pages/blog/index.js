@@ -25,8 +25,8 @@ export default function BlogPage({ posts }) {
       title="Blog – Daniela Giorgio"
       description="Random thoughts and tutorials about programming, tech, hardware, and other."
     >
-      <section className="w-full max-w-3xl mx-auto px-4 sm:px-6 lg:px-0">
-        <h1 className="mt-10 text-3xl md:text-6xl sm:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-gray-200">
+      <section className="max-w-3xl mx-auto mt-10 mb-12">
+        <h1 className="text-3xl md:text-6xl sm:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-gray-200">
           All Posts
         </h1>
 
