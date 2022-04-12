@@ -1,5 +1,5 @@
 module.exports = {
-  root: true, 
+  root: true,
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: "module",
@@ -18,6 +18,7 @@ module.exports = {
     node: true,
   },
   extends: [
+    "plugin:@next/next/recommended",
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
