@@ -13,6 +13,7 @@ export default function Hero() {
           src="/static/images/waving-hand.png"
           aria-label="Waving hand"
           alt="Waving hand"
+          quality={100}
         />{" "}
         I&apos;m Daniela Giorgio.
       </h1>
