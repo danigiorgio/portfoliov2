@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Hero() {
@@ -5,14 +6,14 @@ export default function Hero() {
     <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-0 flex flex-col py-20">
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100">
         Hi!{" "}
-        <img
+        <Image
           className="inline mb-0.5"
           height="33"
           width="33"
           src="/static/images/waving-hand.png"
           aria-label="Waving hand"
           alt="Waving hand"
-        ></img>{" "}
+        />{" "}
         I&apos;m Daniela Giorgio.
       </h1>
       <p className="text-gray-500 dark:text-gray-400 mt-8">

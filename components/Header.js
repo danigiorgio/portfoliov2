@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -10,7 +11,7 @@ export default function Header() {
       <nav className="flex items-center justify-between sm:flex-row max-w-3xl mx-auto">
         <Link href="/">
           <a className="cursor-pointer">
-            <img src="/static/images/logo.png" className="w-11 h-11" alt="Logo containing letter D"></img>
+            <Image src="/static/images/logo.png" width="44" height="44" alt="Logo containing letter D" />
           </a>
         </Link>
         <ul className="flex items-center">
