@@ -27,7 +27,6 @@ module.exports = {
   ],
   plugins: ["simple-import-sort"],
   rules: {
-    "prettier/prettier": ["error", {}, { usePrettierrc: true }],
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
     "simple-import-sort/imports": "error",
@@ -38,6 +37,15 @@ module.exports = {
         components: ["Link"],
         specialLink: ["hrefLeft", "hrefRight"],
         aspects: ["invalidHref", "preferButton"],
+      },
+    ],
+    "no-console": "warn",
+    "padding-line-between-statements": [
+      "error",
+      {
+        blankLine: "always",
+        prev: "*",
+        next: "return",
       },
     ],
   },
