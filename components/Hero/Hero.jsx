@@ -7,9 +7,9 @@ export default function Hero() {
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100">
         Hi!{" "}
         <Image
-          className="inline mb-0.5"
-          height="33"
-          width="33"
+          className=" "
+          height="44"
+          width="44"
           src="/static/images/waving-hand.png"
           aria-label="Waving hand"
           alt="Waving hand"

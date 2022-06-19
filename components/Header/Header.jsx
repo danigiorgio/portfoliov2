@@ -2,10 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-import ThemeSwitch from "./ThemeSwitch";
+import ThemeSwitch from "@/components/ThemeSwitch";
 
 export default function Header() {
   const { pathname } = useRouter();
+
   return (
     <header className="py-10 px-4 sm:px-6 lg:px-0">
       <nav className="flex items-center justify-between sm:flex-row max-w-3xl mx-auto">

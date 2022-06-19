@@ -1,12 +1,14 @@
+import { getProjectItems } from "graphql/queries";
+
 import Card from "@/components/Card";
 import Container from "@/components/Container";
-import { getProjectItems } from "@/data/queries";
 
 export const getStaticProps = async () => {
   const { projects } = await getProjectItems();
+
   return {
     props: {
-      projects: projects,
+      projects,
     },
   };
 };
@@ -25,13 +27,13 @@ export default function ProjectsPage({ projects }) {
         </div>
 
         <div className="flex flex-wrap -m-4 py-12">
-          {projects?.map((item) => (
+          {projects?.map(({ title, description, coverImage, slug }) => (
             <Card
-              key={item.title}
-              title={item.title}
-              description={item.description}
-              imgSrc={item.coverImage.url}
-              href={`/projects/${item.slug}`}
+              key={title}
+              title={title}
+              description={description}
+              imgSrc={coverImage.url}
+              href={`/projects/${slug}`}
             />
           ))}
         </div>

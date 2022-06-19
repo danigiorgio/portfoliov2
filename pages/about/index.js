@@ -1,12 +1,13 @@
+import { getAbout } from "graphql/queries";
 import he from "he";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 
 import Container from "@/components/Container";
-import { getAbout } from "@/data/queries";
 
 export const getStaticProps = async () => {
   const data = await getAbout();
+
   return {
     props: {
       data: data.abouts[0],

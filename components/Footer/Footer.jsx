@@ -1,4 +1,4 @@
-import FooterIcons from "./FooterIcons";
+import FooterIcons from "@/components/FooterIcons";
 
 export default function Footer() {
   return (

@@ -1,22 +1,24 @@
+import { getPosts } from "graphql/queries";
 import Link from "next/link";
 import { useState } from "react";
 
 import Container from "@/components/Container";
-import { getPosts } from "@/data/queries";
 
 export const getStaticProps = async () => {
   const { posts } = await getPosts();
+
   return {
     props: {
-      posts: posts,
+      posts,
     },
   };
 };
 
 export default function BlogPage({ posts }) {
   const [searchValue, setSearchValue] = useState("");
-  const filteredBlogPosts = posts.filter((post) => {
-    const searchContent = post.title + post.description + post.tags.join(" ");
+  const filteredBlogPosts = posts.filter(({ title, description, tags }) => {
+    const searchContent = title + description + tags.join(" ");
+
     return searchContent.toLowerCase().includes(searchValue.toLowerCase());
   });
 
@@ -59,19 +61,19 @@ export default function BlogPage({ posts }) {
         </div>
 
         <div className="md:w-[40rem] w-[24rem] lg:w-[49rem] mt-5 lg:mt-10">
-          {!filteredBlogPosts.length && "No posts found."}
-          {filteredBlogPosts?.map((post) => (
-            <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0" key={post.slug}>
+          {!filteredBlogPosts?.length && "No posts found."}
+          {filteredBlogPosts?.map(({ slug, date, title, description }) => (
+            <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0" key={slug}>
               <div className="mb-2 md:mb-0 md:col-span-1">
-                <p className="text-gray-600 dark:text-gray-300 text-sm">{new Date(post.date).toDateString()}</p>
+                <p className="text-gray-600 dark:text-gray-300 text-sm">{new Date(date).toDateString()}</p>
               </div>
               <div className="md:col-span-3">
-                <Link href={`/blog/${post.slug}`}>
+                <Link href={`/blog/${slug}`}>
                   <a className="text-2xl font-bold text-gray-900 dark:text-gray-100 hover:text-gray-600 tracking-tight">
-                    {post.title}
+                    {title}
                   </a>
                 </Link>
-                <p className="text-gray-500 dark:text-gray-400 leading-relaxed sm:mt-3 mt-2">{post.description}</p>
+                <p className="text-gray-500 dark:text-gray-400 leading-relaxed sm:mt-3 mt-2">{description}</p>
               </div>
             </article>
           ))}

@@ -1,10 +1,10 @@
+import { getBlogSlugs, getPost } from "graphql/queries";
 import he from "he";
 import Image from "next/image";
 import { MDXRemote } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 
 import Container from "@/components/Container";
-import { getBlogSlugs, getPost } from "@/data/queries";
 
 export const getStaticPaths = async () => {
   const slugsRes = await getBlogSlugs();
@@ -17,27 +17,27 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async ({ params }) => {
-  const post = await getPost(params.slug);
+  const { posts } = await getPost(params.slug);
+
   return {
     props: {
-      post: post.posts[0],
-      content: await serialize(he.decode(post.posts[0].content)),
+      post: posts[0],
+      content: await serialize(he.decode(posts[0].content)),
     },
   };
 };
 
 export default function BlosSlug({ post, content }) {
+  const { title, tags, date, author } = post;
+
   return (
-    <Container
-      title={post.title}
-      description="Random thoughts and tutorials about programming, tech, hardware, and other."
-    >
+    <Container title={title} description="Random thoughts and tutorials about programming, tech, hardware, and other.">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-0 mt-10">
         <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-200 sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
-          {post.title}
+          {title}
         </h1>
         <div className="flex space-x-3 mt-2">
-          {post.tags.map((tag) => (
+          {tags?.map((tag) => (
             <span
               className="uppercase text-sm tracking-wide mt-2 bg-gray-100 text-gray-900  px-2 py-1 rounded-lg"
               key={tag}
@@ -47,16 +47,10 @@ export default function BlosSlug({ post, content }) {
           ))}
         </div>
         <div className="flex justify-between items-center mb-8 mt-4 text-sm">
-          <p className="text-gray-700 dark:text-gray-200">{new Date(post.date).toDateString()}</p>
+          <p className="text-gray-700 dark:text-gray-200">{new Date(date).toDateString()}</p>
           <div className="flex items-center">
-            <p className="mr-2 text-gray-800 dark:text-gray-200">{post.author.name}</p>
-            <Image
-              className="w-6 h-6 rounded-full"
-              src={post.author.image.url}
-              width={25}
-              height={25}
-              objectFit="cover"
-            />
+            <p className="mr-2 text-gray-800 dark:text-gray-200">{author.name}</p>
+            <Image className="w-6 h-6 rounded-full" src={author.image.url} width={25} height={25} objectFit="cover" />
           </div>
         </div>
 
