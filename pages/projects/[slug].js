@@ -66,7 +66,7 @@ export default function ProjectSlug({ projectItem, content }) {
         </a>
         <div className="flex justify-between items-center mt-4">
           <div className="flex flex-wrap">
-            {projectItem.tags.map(({ tag }) => (
+            {projectItem.tags.map((tag) => (
               <span
                 className="uppercase text-sm tracking-wide mt-2 mr-2 bg-gray-100 px-2 py-1 rounded-lg text-gray-900"
                 key={tag}
