@@ -18,7 +18,7 @@ export default function Hero() {
         I&apos;m Daniela Giorgio.
       </h1>
       <p className="text-gray-500 dark:text-gray-400 mt-8">
-        I&apos;m a frontend developer based in Buenos Aires, Argentina. Check out my{" "}
+        I&apos;m a frontend developer based in Stockholm, Sweden. Check out my{" "}
         <Link href="/projects">
           <a className="text-lilac dark:text-lilaclight hover:text-gray-400 border-b-2 border-lilac">side-projects</a>
         </Link>{" "}
