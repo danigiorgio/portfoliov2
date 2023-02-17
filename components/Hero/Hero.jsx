@@ -19,12 +19,12 @@ export default function Hero() {
       </h1>
       <p className="text-gray-500 dark:text-gray-400 mt-8">
         I&apos;m a frontend developer based in Stockholm, Sweden. Check out my{" "}
-        <Link href="/projects">
-          <a className="text-lilac dark:text-lilaclight hover:text-gray-400 border-b-2 border-lilac">side-projects</a>
+        <Link href="/projects" className="text-lilac dark:text-lilaclight hover:text-gray-400 border-b-2 border-lilac">
+          side-projects
         </Link>{" "}
         and my{" "}
-        <Link href="/blog">
-          <a className="text-lilac dark:text-lilaclight hover:text-gray-400 border-b-2 border-lilac">blog</a>
+        <Link href="/blog" className="text-lilac dark:text-lilaclight hover:text-gray-400 border-b-2 border-lilac">
+          blog
         </Link>{" "}
         where I post tutorials and things that spark my curiosity.
       </p>

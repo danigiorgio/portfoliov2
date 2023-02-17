@@ -13,8 +13,12 @@ const Card = ({ title, description, imgSrc, href }) => (
         </h2>
         <p className="prose text-gray-500 dark:text-gray-400 mb-3">{description}</p>
 
-        <Link href={href} aria-label={`Link to ${title}`}>
-          <a className="font-medium text-lilac dark:text-lilaclight hover:text-gray-600">Learn more &rarr;</a>
+        <Link
+          href={href}
+          aria-label={`Link to ${title}`}
+          className="font-medium text-lilac dark:text-lilaclight hover:text-gray-600"
+        >
+          Learn more &rarr;
         </Link>
       </div>
     </div>

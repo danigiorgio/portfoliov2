@@ -68,10 +68,11 @@ export default function BlogPage({ posts }) {
                 <p className="text-gray-600 dark:text-gray-300 text-sm">{new Date(date).toDateString()}</p>
               </div>
               <div className="md:col-span-3">
-                <Link href={`/blog/${slug}`}>
-                  <a className="text-2xl font-bold text-gray-900 dark:text-gray-100 hover:text-gray-600 tracking-tight">
-                    {title}
-                  </a>
+                <Link
+                  href={`/blog/${slug}`}
+                  className="text-2xl font-bold text-gray-900 dark:text-gray-100 hover:text-gray-600 tracking-tight"
+                >
+                  {title}
                 </Link>
                 <p className="text-gray-500 dark:text-gray-400 leading-relaxed sm:mt-3 mt-2">{description}</p>
               </div>
