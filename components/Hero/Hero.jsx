@@ -6,15 +6,17 @@ export default function Hero() {
     <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-0 flex flex-col py-20">
       <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100">
         Hi!{" "}
-        <Image
-          className=" "
-          height="44"
-          width="44"
-          src="/static/images/waving-hand.png"
-          aria-label="Waving hand"
-          alt="Waving hand"
-          quality={100}
-        />{" "}
+        <div style={{ display: "inline-block" }}>
+          <Image
+            className=" "
+            height="40"
+            width="40"
+            src="/static/images/waving-hand.png"
+            aria-label="Waving hand"
+            alt="Waving hand"
+            quality={100}
+          />
+        </div>{" "}
         I&apos;m Daniela Giorgio.
       </h1>
       <p className="text-gray-500 dark:text-gray-400 mt-8">
