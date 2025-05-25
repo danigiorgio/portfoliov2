@@ -31,7 +31,7 @@ export default function BlogPage({ posts }) {
       title="Blog – Daniela Giorgio"
       description="Random thoughts and tutorials about programming, tech, hardware, and other."
     >
-      <section className="max-w-3xl mx-auto mt-10 mb-12">
+      <section className="max-w-3xl mx-auto mb-12 px-4 sm:px-6 lg:px-0 flex flex-col py-20">
         <h1 className="text-3xl md:text-6xl sm:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-gray-200">
           All Posts
         </h1>
@@ -60,10 +60,10 @@ export default function BlogPage({ posts }) {
           </svg>
         </div>
 
-        <div className="md:w-[40rem] w-[24rem] lg:w-[49rem] mt-5 lg:mt-10">
+        <div className="mt-5 lg:mt-10">
           {!filteredBlogPosts?.length && "No posts found."}
           {filteredBlogPosts?.map(({ slug, date, title, description }) => (
-            <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0" key={slug}>
+            <article className="max-w-5xl space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0" key={slug}>
               <div className="mb-2 md:mb-0 md:col-span-1">
                 <p className="text-gray-600 dark:text-gray-300 text-sm">{new Date(date).toDateString()}</p>
               </div>

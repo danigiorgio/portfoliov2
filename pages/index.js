@@ -28,7 +28,7 @@ export default function Home({ data }) {
           {posts?.map(({ slug, date, title, description }) => (
             <div
               key={slug}
-              className="grid grid-cols-1 md:grid-cols-4 py-6 border-b border-gray-200 dark:border-gray-800"
+              className="grid grid-cols-1 mb-8 md:grid-cols-4 py-6 border-b border-gray-200 dark:border-gray-800"
             >
               <div className="mb-2 md:mb-0 md:col-span-1">
                 <p className="text-gray-600 dark:text-gray-300 text-sm">{new Date(date).toDateString()}</p>
