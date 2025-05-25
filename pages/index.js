@@ -47,7 +47,7 @@ export default function Home({ data }) {
         </div>
       </section>
 
-      <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-0 mt-20">
+      <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-0 mt-20 hidden">
         <h2 className="text-4xl text-gray-900 dark:text-gray-100 font-semibold mb-4">Side Projects</h2>
         <div className="max-w-3xl mx-auto mb-12">
           <div className="text-primaryText bg-paper border-divider tablet:p-2 mobile:col-span-12 cursor-pointer">
