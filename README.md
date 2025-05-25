@@ -51,7 +51,7 @@ https://danielagiorgio.com/
 
 * [Next.js](https://nextjs.org/)     
 * [TailwindCSS](https://tailwindcss.com)      
-* [HygraphCMS]([https://graphcms.com/](https://hygraph.com/))    
+* [HygraphCMS](https://hygraph.com/)
 
 # :rocket: Features
 
