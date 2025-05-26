@@ -16,7 +16,7 @@ export default function Container({ children, ...customMeta }) {
   };
 
   return (
-    <div className="bg-white dark:bg-grayish">
+    <div className="bg-white dark:bg-grayish flex flex-col min-h-screen">
       <Head>
         <title>{meta.title}</title>
         <link rel="canonical" href={`https://danielagiorgio.com${router.asPath}`} />
@@ -32,7 +32,7 @@ export default function Container({ children, ...customMeta }) {
 
       <Header />
 
-      <main id="skip" className="flex flex-col justify-center px-8 md:px:4 sm:px-2 bg-white dark:bg-grayish">
+      <main id="skip" className="flex-1 px-8 md:px:4 sm:px-2 bg-white dark:bg-grayish">
         {children}
       </main>
       <Footer />

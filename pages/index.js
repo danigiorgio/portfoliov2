@@ -22,9 +22,9 @@ export default function Home({ data }) {
     <Container>
       <Hero />
 
-      <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-0">
+      <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-0 mb-10">
         <div className="mt-20">
-          <h2 className="text-4xl text-gray-900 dark:text-gray-100 font-semibold mb-4">Recent Posts</h2>
+          <h2 className="text-4xl text-gray-900 dark:text-gray-100 font-extrabold mb-4">Recent Posts</h2>
           {posts?.map(({ slug, date, title, description }) => (
             <div
               key={slug}
