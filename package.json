@@ -17,35 +17,34 @@
     "lint:fix": "yarn eslint . --ext .js, --fix"
   },
   "dependencies": {
-    "@tailwindcss/typography": "^0.4.0",
-    "eslint-config-next": "^14.2.4",
-    "graphql": "^15.5.0",
-    "graphql-request": "^3.5.0",
-    "he": "^1.2.0",
-    "next": "^14.2.4",
-    "next-mdx-remote": "^3.0.8",
-    "next-seo": "^4.24.0",
-    "next-themes": "^0.0.15",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  },
-  "devDependencies": {
-    "@next/eslint-plugin-next": "^12.1.4",
-    "autoprefixer": "^10.3.3",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.4.1",
-    "eslint-plugin-react": "^7.23.2",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "eslint-plugin-simple-import-sort": "^7.0.0",
-    "globby": "^12.0.2",
-    "husky": "^7.0.2",
-    "lint-staged": "^11.1.2",
-    "postcss": "^8.3.6",
-    "prettier": "^2.2.1",
-    "tailwindcss": "^2.2.8"
-  },
+    "next": "14.2.35",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "next-mdx-remote": "^5.0.0",
+    "next-seo": "^4.26.0",
+    "next-themes": "^0.3.0",
+    "graphql": "^16.12.0",
+    "graphql-request": "^6.1.0",
+    "he": "^1.2.0"
+},
+"devDependencies": {
+   "autoprefixer": "^10.4.20",
+   "postcss": "^8.4.38",
+   "tailwindcss": "^3.4.17",
+   "@tailwindcss/typography": "^0.5.10",
+   "eslint": "^8.57.0",
+   "eslint-config-next": "14.2.35",
+   "eslint-config-prettier": "^9.1.0",
+   "eslint-plugin-jsx-a11y": "^6.9.0",
+   "eslint-plugin-react": "^7.37.0",
+   "eslint-plugin-react-hooks": "^4.6.0",
+   "eslint-plugin-prettier": "^5.2.1",
+   "eslint-plugin-simple-import-sort": "^12.1.1",
+   "prettier": "^3.3.3",
+   "husky": "^9.1.6",
+   "lint-staged": "^15.2.10",
+   "globby": "^14.0.2"
+},
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged"
