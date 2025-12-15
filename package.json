@@ -9,7 +9,7 @@
     "url": "https://github.com/voirs/portfoliov2"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "format": "prettier --write \"**/*.{js}\"",
     "start": "next start",
