@@ -1,13 +1,12 @@
 const nextConfig = {
   images: {
-    remotePatterns:  [
+    remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'us-east-1.graphassets.com',
-      },
-    ],
-  },
-};
-
+        hostname: 'us-east-1.graphassets.com'
+      }
+    ]
+  }
+}
 
 module.exports = nextConfig
