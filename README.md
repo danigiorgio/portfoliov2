@@ -22,7 +22,7 @@
   <img alt="Github Repo Size" src="https://img.shields.io/github/repo-size/danigiorgio/portfoliov2?color=6868DF" />
 </p>
 
- <p align="center">Second iteration of my web portfolio. Made with Next.js, GraphCMS and TailwindCSS.</p>
+ <p align="center">Second iteration of my web portfolio. Made with Next.js, HygraphCMS and TailwindCSS.</p>
 
 <div align="center">
   <sub>Portfolio v2. Built by
@@ -51,7 +51,7 @@ https://danielagiorgio.com/
 
 * [Next.js](https://nextjs.org/)     
 * [TailwindCSS](https://tailwindcss.com)      
-* [GraphCMS](https://graphcms.com/)    
+* [HygraphCMS](https://hygraph.com/)
 
 # :rocket: Features
 

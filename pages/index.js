@@ -22,13 +22,13 @@ export default function Home({ data }) {
     <Container>
       <Hero />
 
-      <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-0">
+      <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-0 mb-10">
         <div className="mt-20">
-          <h2 className="text-4xl text-gray-900 dark:text-gray-100 font-semibold mb-4">Recent Posts</h2>
+          <h2 className="text-4xl text-gray-900 dark:text-gray-100 font-extrabold mb-4">Recent Posts</h2>
           {posts?.map(({ slug, date, title, description }) => (
             <div
               key={slug}
-              className="grid grid-cols-1 md:grid-cols-4 py-6 border-b border-gray-200 dark:border-gray-800"
+              className="grid grid-cols-1 mb-8 md:grid-cols-4 py-6 border-b border-gray-200 dark:border-gray-800"
             >
               <div className="mb-2 md:mb-0 md:col-span-1">
                 <p className="text-gray-600 dark:text-gray-300 text-sm">{new Date(date).toDateString()}</p>
@@ -47,7 +47,7 @@ export default function Home({ data }) {
         </div>
       </section>
 
-      <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-0 mt-20">
+      <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-0 mt-20 hidden">
         <h2 className="text-4xl text-gray-900 dark:text-gray-100 font-semibold mb-4">Side Projects</h2>
         <div className="max-w-3xl mx-auto mb-12">
           <div className="text-primaryText bg-paper border-divider tablet:p-2 mobile:col-span-12 cursor-pointer">

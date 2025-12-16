@@ -14,7 +14,7 @@ export default function Header() {
           <Image src="/static/images/logo.png" width="44" height="44" alt="Logo containing letter D" />
         </Link>
         <ul className="flex items-center">
-          <li>
+          <li className="ml-4">
             <Link href="/" className={`dark:text-gray-200 hover:text-gray-500 ${pathname === "/" && "border-b-2"}`}>
               Home
             </Link>
@@ -27,7 +27,7 @@ export default function Header() {
               About
             </Link>
           </li>
-          <li className="ml-6">
+          <li className="ml-6 hidden">
             <Link
               href="/projects"
               className={`dark:text-gray-200 hover:text-gray-500 ${pathname === "/projects" && "border-b-2"}`}
@@ -43,7 +43,7 @@ export default function Header() {
               Blog
             </Link>
           </li>
-          <li className="ml-6">
+          <li className="ml-3">
             <ThemeSwitch />
           </li>
         </ul>
