@@ -17,34 +17,34 @@
     "lint:fix": "yarn eslint . --ext .js, --fix"
   },
   "dependencies": {
-    "next": "14.2.35",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
+    "graphql": "^16.12.0",
+    "graphql-request": "^6.1.0",
+    "he": "^1.2.0",
+    "next": "^16.0.10",
     "next-mdx-remote": "^5.0.0",
     "next-seo": "^4.26.0",
     "next-themes": "^0.3.0",
-    "graphql": "^16.12.0",
-    "graphql-request": "^6.1.0",
-    "he": "^1.2.0"
-},
-"devDependencies": {
-   "autoprefixer": "^10.4.20",
-   "postcss": "^8.4.38",
-   "tailwindcss": "^3.4.17",
-   "@tailwindcss/typography": "^0.5.10",
-   "eslint": "^8.57.0",
-   "eslint-config-next": "14.2.35",
-   "eslint-config-prettier": "^9.1.0",
-   "eslint-plugin-jsx-a11y": "^6.9.0",
-   "eslint-plugin-react": "^7.37.0",
-   "eslint-plugin-react-hooks": "^4.6.0",
-   "eslint-plugin-prettier": "^5.2.1",
-   "eslint-plugin-simple-import-sort": "^12.1.1",
-   "prettier": "^3.3.3",
-   "husky": "^9.1.6",
-   "lint-staged": "^15.2.10",
-   "globby": "^14.0.2"
-},
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^16.0.10",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jsx-a11y": "^6.9.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "globby": "^14.0.2",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "postcss": "^8.4.38",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.17"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged"
