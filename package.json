@@ -17,6 +17,7 @@
     "lint:fix": "yarn eslint . --ext .js, --fix"
   },
   "dependencies": {
+    "eslint-config-next": "^16.0.10",
     "graphql": "^16.12.0",
     "graphql-request": "^6.1.0",
     "he": "^1.2.0",
@@ -24,14 +25,13 @@
     "next-mdx-remote": "^5.0.0",
     "next-seo": "^4.26.0",
     "next-themes": "^0.3.0",
-    "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
     "autoprefixer": "^10.4.20",
     "eslint": "^8.57.0",
-    "eslint-config-next": "^16.0.10",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-jsx-a11y": "^6.9.0",
     "eslint-plugin-prettier": "^5.2.1",
