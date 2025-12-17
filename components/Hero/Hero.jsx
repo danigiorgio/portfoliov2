@@ -19,9 +19,12 @@ export default function Hero() {
         </div>
       </h1>
       <p className="text-gray-500 dark:text-gray-400 mt-8">
-         I&apos;m Daniela. I&apos;m a frontend developer with over six years of experience delivering solutions across projects in both startup and large corporate environments. 
+        I&apos;m Daniela. I&apos;m a frontend developer with over six years of experience delivering solutions across
+        projects in both startup and large corporate environments.
       </p>
-      <p className="text-gray-500 dark:text-gray-400 mt-8"> Check out my{" "}
+      <p className="text-gray-500 dark:text-gray-400 mt-8">
+        {" "}
+        Check out my{" "}
         <Link href="/blog" className="text-lilac dark:text-lilaclight hover:text-gray-400 border-b-2 border-lilac">
           blog
         </Link>{" "}
