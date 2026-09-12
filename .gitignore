@@ -30,5 +30,10 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
-# vercel
-.vercel
+# eslint cache
+.eslintcache
+
+# next-sitemap
+robots.txt
+sitemap.xml
+sitemap-*.xml

@@ -14,7 +14,8 @@
     "format": "prettier --write \"**/*.{js}\"",
     "start": "next start",
     "lint": "yarn eslint . --ext .js",
-    "lint:fix": "yarn eslint . --ext .js, --fix"
+    "lint:fix": "yarn eslint . --ext .js, --fix",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "eslint-config-next": "^16.0.10",
@@ -24,6 +25,7 @@
     "next": "^16.0.10",
     "next-mdx-remote": "^5.0.0",
     "next-seo": "^4.26.0",
+    "next-sitemap": "^4.2.3",
     "next-themes": "^0.3.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3"
