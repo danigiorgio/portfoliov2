@@ -19,7 +19,7 @@ export default function Hero() {
         </div>
       </h1>
       <p className="text-gray-500 dark:text-gray-400 mt-8">
-         I&apos;m Daniela. I&apos;m a frontend developer with 7+ years of experience bringing ideas to life across product-focused teams and large organizations. I enjoy breaking down complex problems and building simple, intuitive experiences.
+        I&apos;m Daniela. I&apos;m a frontend developer with 7+ years of experience bringing ideas to life across product-focused teams and large organizations. I enjoy breaking down complex problems and building simple, intuitive experiences.
       </p>
       <p className="text-gray-500 dark:text-gray-400 mt-8">
         {" "}
